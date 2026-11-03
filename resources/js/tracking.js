@@ -18,7 +18,7 @@ export function startTracking(options) {
     } else {
         window['ga-disable-' + options.measurementId] = false;
         window.gtag('js', new Date());
-        window.gtag('config', options.measurementId, { send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false });
+        window.gtag('config', options.measurementId, { send_page_view: false, page_location: location.origin + location.pathname, page_referrer: '', page_title: 'Offentlig side', allow_google_signals: false, allow_ad_personalization_signals: false });
         window.gtag('event', 'page_view', { page_location: location.origin + location.pathname, page_referrer: '', page_title: 'Offentlig side' });
         script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(options.measurementId);
     }
