@@ -1,7 +1,7 @@
 {
     "name": "tronderdata/google",
     "description": "Optional consent-gated Google tracking and aggregate GA4 insights for Laravel.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "type": "library",
     "license": "MIT",
     "require": {
