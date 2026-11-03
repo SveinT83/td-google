@@ -1,0 +1,26 @@
+{
+    "name": "tronderdata/google",
+    "description": "Optional consent-gated Google tracking and aggregate GA4 insights for Laravel.",
+    "version": "0.1.0",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "illuminate/support": "^13.0",
+        "illuminate/http": "^13.0",
+        "illuminate/console": "^13.0",
+        "google/auth": "^1.50"
+    },
+    "autoload": {
+        "psr-4": {
+            "TronderData\\Google\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TronderData\\Google\\GoogleServiceProvider"
+            ]
+        }
+    }
+}
