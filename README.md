@@ -29,3 +29,7 @@ To remove completely, remove the Composer dependency/repository, module source a
 ## Verification
 
 Integration tests live in the starter: tests/Feature/GoogleModuleTest.php and tests/js. They use synthetic data and mocked HTTP. Live credentials, Google ingestion, GTM container behavior and production scheduler operation require separate verification.
+
+## RFC og ADR før endring
+
+Les [AGENTS.md](AGENTS.md) og [endringsreglene](docs/change-policy.md). Fellesendringer krever godkjent RFC og akseptert ADR innenfor dokumentert mandat før implementering. Et eksisterende konkret mandat kan dekke beslutningen uten ny manuell godkjenning. Korte maler følger i docs/rfc og docs/adr; også kundens KI skal bruke dette løpet. Site har større frihet innenfor kundens mandat og modulkontraktene.
